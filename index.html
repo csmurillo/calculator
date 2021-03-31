@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Calculator
+        </title>
+        <link rel="stylesheet" type="text/css" href="../calculator/css/calculator-styles.css" />
+    </head>
+    <body>
+        <div id="calculator">
+            <div id="screen-container">
+                <div id="temp-result-container">
+                </div>
+                <div id="result-container">
+                </div>
+            </div>
+            <div id="clear-back-container">
+                <div id="clear-container" class="center-content" onclick="clearScreen();">
+                    C
+                </div>
+                <div id="backspace-container" class="center-content" onclick="backSpace();">
+                    &lt;
+                </div>
+            </div>
+            <div id="num-operator-container">
+                <div id="number-container">
+                    <div class="number-row">
+                        <div id="nine" class="number center-content" onclick="appendNumberToScreen('9')">9</div>
+                        <div id="eight" class="number center-content" onclick="appendNumberToScreen('8')">8</div>
+                        <div id="seven" class="number center-content" onclick="appendNumberToScreen('7')">7</div>
+                    </div>
+                    <div class="number-row">
+                        <div id="six" class="number center-content" onclick="appendNumberToScreen('6')">6</div>
+                        <div id="five" class="number center-content" onclick="appendNumberToScreen('5')">5</div>
+                        <div id="four" class="number center-content" onclick="appendNumberToScreen('4')">4</div>
+                    </div>
+                    <div class="number-row">
+                        <div id="three" class="number center-content" onclick="appendNumberToScreen('3')">3</div>
+                        <div id="two" class="number center-content" onclick="appendNumberToScreen('2')">2</div>
+                        <div id="one" class="number center-content" onclick="appendNumberToScreen('1')">1</div>
+                    </div>
+                    <div class="number-row">
+                        <div class="number-filler"></div>
+                        <div id="zero" class="number center-content" onclick="appendNumberToScreen('0')">0</div>
+                        <div class="number-filler"></div>
+                    </div>
+                </div>
+                <div id="operator-container">
+                    <div id="multiply" class="operator center-content" onclick="appendOperatorToScreen('*')">*</div>
+                    <div id="divide" class="operator center-content" onclick="appendOperatorToScreen('/')">/</div>
+                    <div id="plus" class="operator center-content" onclick="appendOperatorToScreen('+')">+</div>
+                    <div id="minus" class="operator center-content" onclick="appendOperatorToScreen('-')">-</div>
+                    <div id="equal" class="operator center-content" onclick="equal()">=</div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./js/calculate.js"></script>
+    <script>screen.orientation.lock('portrait')
+    </script>
+</html>
